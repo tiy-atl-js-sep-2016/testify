@@ -13,7 +13,10 @@ function fizz (numbers) {
 };
 
 function fizzBuzz (start, end) {
-  // Write fizzBuzz here once fizz is finished.
+  // loop from start to end and call fizz
+  // maybe console log the answer from fizz
 };
+
+fizzBuzz(1, 15);
 
 export { fizz };
