@@ -15,7 +15,21 @@ describe('Fizzbuzz returns values for different kinds of numbers', function () {
     assert.equal(result, 4);
   });
 
-  // Your Tests Here
+  it('should return fizz for all numbers divisible by "5"', function(){
+    let result = fizz(10);
+    assert.equal(result, "Buzz");
+  })
+
+  it('should return fizz for all numbers divisible by "3"', function(){
+    let result = fizz(9);
+    assert.equal(result, "fizz");
+  })
+
+  it('should return fizz for all numbers divisible by "15"', function(){
+    let result = fizz(30);
+    assert.equal(result, "fizzBuzz");
+  })
+
 });
 
 // UNCOMMENT THE SECTION BELOW FOR HARD MODE

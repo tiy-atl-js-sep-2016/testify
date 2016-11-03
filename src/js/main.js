@@ -1,4 +1,10 @@
 function fizz (numbers) {
+  if (numbers % 15 === 0) {
+    return "fizzBuzz";
+  }
+  if (numbers % 5 === 0) {
+    return "Buzz";
+  }
   if (numbers % 3 === 0) {
     return "fizz";
   } else {
