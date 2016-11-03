@@ -12,11 +12,16 @@ function fizz (numbers) {
   }
 };
 
-function fizzBuzz (start, end) {
-  // loop from start to end and call fizz
-  // maybe console log the answer from fizz
-};
+// loop from start to end and call fizz
+// maybe console log the answer from fizz
 
-fizzBuzz(1, 15);
+function fizzBuzz (start, end) {
+  var result = [];
+  for (var i = start; i <= end; i++){
+    var newResult = fizz(result.push(i));
+    console.log(newResult);
+  }
+};
+console.log(fizzBuzz(1, 30));
 
 export { fizz };
